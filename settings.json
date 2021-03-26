@@ -1,0 +1,44 @@
+{
+  // Nomal
+  "editor.fontSize": 18,
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.minimap.enabled": true,
+  "workbench.colorTheme": "Visual Studio Light",
+  "workbench.startupEditor": "newUntitledFile",
+  // 保存格式化
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  // Env
+  "java.home": "/usr/local/jdk1.8.0_201",
+  "maven.executable.path": "/usr/local/apache-maven-3.6.0/bin/mvn",
+  "java.configuration.maven.userSettings": "/usr/local/apache-maven-3.6.0/conf/settings.xml",
+  "maven.terminal.customEnv": [
+    {
+      "environmentVariable": "JAVA_HOME",
+      "value": "/usr/local/jdk1.8.0_261"
+    }
+  ],
+  "python.formatting.provider": "yapf",
+  "python.autoComplete.addBrackets": true,
+  "python.jediEnabled": false,
+  "python.linting.pylintEnabled": true,
+  // exclude file
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    "**/.vscode": true,
+    "**/.empty": true,
+  },
+  // code-runner
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.runInTerminal": false,
+  // 执行文件的脚本，可以使用绝对路径
+  "code-runner.executorMap": {
+    "python": "/usr/local/anaconda3/python3",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+  },
+}
